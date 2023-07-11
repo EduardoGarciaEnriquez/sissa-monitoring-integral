@@ -1,0 +1,16 @@
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+
+  background-color: white;
+  box-shadow: 0 2px 4px 0 #cccbca;
+
+  a {
+    color: red;
+  }
+}
