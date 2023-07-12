@@ -2,7 +2,17 @@
 const path = require('path')
 
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'sissamx.com.mx',
+        pathname: '/img/logos/**'
+      }
+    ]
+  }
 }
 
 module.exports = {

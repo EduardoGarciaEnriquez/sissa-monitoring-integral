@@ -1,16 +1,49 @@
+@import '../../styles/variables.scss';
+
 .container {
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 10px 0;
+  padding: 5px 10px;
 
-  background-color: white;
+  background-color: $background_color;
   box-shadow: 0 2px 4px 0 #cccbca;
 
-  a {
-    color: red;
+  .menuIcon {
+    span svg {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .headerLogo {
+    margin: 0 auto;
+
+    img {
+      height: 90%;
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    padding: 10px 10%;
+
+    .headerLogo {
+      margin: 0;
+    }
+
+    .menu {
+      margin: 0 auto;
+
+      ul li span {
+        color: $sissa_red;
+        font-weight: bold;
+      }
+    }
   }
 }
