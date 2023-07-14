@@ -72,6 +72,7 @@ const index = () => {
 
   const onClick = (e) => {
     setCurrent(e.key)
+    onToggleDrawer()
   }
 
   const onToggleDrawer = () => {
@@ -99,7 +100,16 @@ const index = () => {
           </div>
         </div>
         <Drawer
-          title='SISSA MONITORING LOGO'
+          title={
+            <div className={styles.menuLogo}>
+              <Image
+                src={'https://sissamx.com.mx/img/logos/header_logo.png'}
+                alt='Header Logo'
+                width={100}
+                height={24}
+              />
+            </div>
+          }
           placement='left'
           onClose={onToggleDrawer}
           open={isDrawerOpen}
