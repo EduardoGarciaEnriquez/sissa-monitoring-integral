@@ -13,7 +13,11 @@
 export default function Home() {
   return (
     <>
-    solin solito
+    <section>banner</section>
+    <section>about us</section>
+    <section>our partners</section>
+    <section>our services</section>
+    <section>know more / blog</section>
     </>
   )
 }
