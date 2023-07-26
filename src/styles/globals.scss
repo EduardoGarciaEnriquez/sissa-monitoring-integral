@@ -7,5 +7,16 @@
 html,
 body {
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
+  background-image: url('https://sissamx.com.mx/img/background/background.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.children-container{
+  padding-top: 10vh;
+  min-height: 100vh;
 }
