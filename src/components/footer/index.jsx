@@ -11,7 +11,7 @@ function index() {
 
   return (
     <div className={styles.container}>
-      <section className={styles.sectionA}>
+      <section>
         <div>
           <a
             href='https://www.youtube.com/channel/UC6NAyWKACq8AwWuYA1B94yg'
@@ -39,7 +39,7 @@ function index() {
         </div>
       </section>
       <div className={styles.divider} />
-      <section className={styles.sectionB}>
+      <section>
         <div>
           <span>SISSA &#169;{currentYear} Todos los derechos reservados</span>
         </div>
