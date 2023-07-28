@@ -1,3 +1,59 @@
-.container{
-    min-height: 10vh;
+@import '../../styles/variables.scss';
+
+.container {
+  min-height: 10vh;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 55px 10px;
+  }
+
+  .sectionA {
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        color: $sissa_red;
+        font-size: 2rem;
+        margin-right: 20px;
+      }
+
+      .icon {
+        color: $sissa_red;
+        font-size: 1.5rem;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .sectionB {
+    a,
+    span {
+      color: $sissa_gray;
+      margin-right: 20px;
+    }
+  }
+
+  .divider {
+    height: 20px;
+    background-color: $sissa_red;
+  }
+
+  background-color: $background_color;
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    section {
+      padding: 55px 10%;
+    }
+  }
 }
