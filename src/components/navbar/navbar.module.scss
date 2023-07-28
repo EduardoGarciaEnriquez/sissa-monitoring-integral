@@ -37,21 +37,20 @@
 
   img {
     height: max-content;
-    // width: auto;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .container {
     padding: 10px 10%;
+    display: flex;
+    justify-items: space-between;
 
     .headerLogo {
       margin: 0;
     }
 
     .menu {
-      margin: 0 auto;
-
       ul li span {
         color: $sissa_red;
         font-weight: bold;
