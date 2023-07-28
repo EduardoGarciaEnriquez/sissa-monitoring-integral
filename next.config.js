@@ -9,7 +9,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'sissamx.com.mx',
-        pathname: '/img/logos/**'
+        pathname: '/img/**'
       }
     ]
   }
